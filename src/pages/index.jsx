@@ -11,7 +11,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import avatar from '../images/steven-chu-avatar.png';
 import '../styles/global';
 
 let Parallax;
@@ -168,9 +168,16 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            Product, UX, & Experience Design.
           </BigTitle>
-          <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          <Subtitle>
+          <strong>Hybrid designer-developer.</strong> I’ve worked at everything from startup ventures to agencies, not-for-profits, and mega corps over the past 12+ years– but more than that:
+          <br/><br/>I care that we're making tools that reach and can be used by more <em>different kinds</em> of people.
+          <br/>🧕🏾👨🏻‍🎤👮🏻‍♂️👰👬👭🧘‍♀️🧛🏻‍♂️ 
+       
+          <br/><br/>
+          
+          </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -260,18 +267,14 @@ const Index = () => (
         <Inner>
           <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar src={avatar} alt="Steven Chu" />
             <AboutSub>
               The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
               Emoji into my speech to better express myself. Winky face.
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+          I grew my practice from working as an advertising digital art directior, to solo web designer-developer, to senior visual designer, in-house brand strategist, to front-end developer, to UX designer
           </AboutDesc>
         </Inner>
       </Content>
@@ -295,14 +298,14 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:work@stevenchustudio.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://dribbble.com/stevenchustudio">Dribbble</a> &{' '}
+            <a href="https://www.instagram.com/chuubie/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          &copy; 2018 by Steven Chu Studio.{' '}
+          <a href="https://github.com/stevenchu">Github Repository</a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>

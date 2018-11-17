@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "src/images/uploads" # Media files will be stored in the repo under images/uploads
+
+
+
+collections:
+  - name: "client"
+    label: "Client" 
+    folder: "content/clients"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Industry", name: "industry", widget: "select", options: ["Agency", "Art & Design", "Entertainment", "Media", "Retail", "Tech"]}
+      - {label: "Raw Logo", name: rawLogo, widget: image, required: false}
+      - {label: "Card Logo", name: cardLogo, widget: image, required: false}
+      - {label: "About", name: "about", widget: "markdown"}    
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: Type, name: type, widget: hidden, default: "post"}
+        
+        
+
+  - name: "case-studies"
+    label: "Case Studies" 
+    folder: "content/projects/case-studies"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Headline", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Categories", name: "categories", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Header Image", name: image, widget: image, required: false}
+      - {label: Type, name: type, widget: hidden, default: "post"}
+      - {label: "Overview", name: "overview", widget: "markdown"}   
+      - {label: "Challenge", name: "challenge", widget: "markdown"}   
+      - {label: "Solution", name: "solution", widget: "markdown"}   
+      - {label: "Body Image", name: image, widget: image, required: false}
+      - {label: "Methods", name: "methods", widget: "list", required: false}
+         
+
+        
