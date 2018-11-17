@@ -19,12 +19,7 @@ module.exports = {
         name: 'images',
       },
     },
-    {
-      resolve: 'gatsby-plugin-netlify-identity-widget',
-      options: {
-        container: '#netlify-modal'
-      }
-    },
+    'gatsby-plugin-netlify-identity-widget',
     'gatsby-plugin-netlify-cms',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
